@@ -178,3 +178,23 @@
     width: 100%; /* Ocupan todo el ancho disponible */
   }
 }
+
+/*---------------------------------------BANNER------------------------------------------------------*/
+.contenedorBanner{
+    width: 90%;
+    display: flex;
+    margin-left: 5%;
+}
+
+.contenedorBanner img{
+    width: 100%;
+}
+
+/*Banner responsive*/
+
+@media(max-width: 768px){
+    .contenedorBanner {
+        width: 100%;
+        margin-left: 0%;
+    }
+}
