@@ -4,6 +4,17 @@
   padding: 0px;
   box-sizing: border-box;
 }
+
+/*Estilo Fuente*/
+a{
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
 /*----------------------------------------------------Estilo encabezado--------------------------------------------*/
 .header {
   width: 100%;
@@ -24,12 +35,17 @@
 }
 
 .contenedorUsuario {
-  width: 20%;
+  width: 30%;
   background-color: rgb(255, 255, 255);
   height: auto;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-evenly
+}
+
+.contenedorUsuario img{
+  margin-left: 4%;
+  margin-right: 5%;
 }
 
 .contenedorUsuario img {
@@ -47,7 +63,7 @@
 }
 
 .text-input {
-  width: 60%;
+  width: 50%;
   margin-left: 5%;
   padding: 10px 15px;
   font-size: 16px;
@@ -197,4 +213,21 @@
         width: 100%;
         margin-left: 0%;
     }
+}
+
+/*Marcas*/
+
+.contenedorMarcas{  
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 55;
+    display: flex;
+    justify-content: space-around
+
+}
+
+.contenedorMarcas img{
+    width: 15%;
+    height: 60px;
 }
