@@ -6,13 +6,12 @@
 }
 
 /*Estilo Fuente*/
-a{
+a {
   font-family: "Open Sans", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+  font-variation-settings: "wdth" 100;
 }
 
 /*----------------------------------------------------Estilo encabezado--------------------------------------------*/
@@ -40,10 +39,10 @@ a{
   height: auto;
   display: flex;
   align-items: center;
-  justify-content: space-evenly
+  justify-content: space-evenly;
 }
 
-.contenedorUsuario img{
+.contenedorUsuario img {
   margin-left: 4%;
   margin-right: 5%;
 }
@@ -196,43 +195,42 @@ a{
 }
 
 /*---------------------------------------BANNER------------------------------------------------------*/
-.contenedorBanner{
-    width: 90%;
-    display: flex;
-    margin-left: 5%;
+.contenedorBanner {
+  width: 90%;
+  display: flex;
+  margin-left: 5%;
 }
 
-.contenedorBanner img{
-    width: 100%;
+.contenedorBanner img {
+  width: 100%;
 }
 
 /*Banner responsive*/
 
-@media(max-width: 768px){
-    .contenedorBanner {
-        width: 100%;
-        margin-left: 0%;
-    }
+@media (max-width: 768px) {
+  .contenedorBanner {
+    width: 100%;
+    margin-left: 0%;
+  }
 }
 
 /*Marcas*/
 
-.contenedorMarcas{  
-    width: 90%;
-    margin-left: 5%;
-    margin-top: 5%;
-    margin-bottom: 55;
-    display: flex;
-    justify-content: space-around
-
+.contenedorMarcas {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 5%;
+  margin-bottom: 55;
+  display: flex;
+  justify-content: space-around;
 }
 
-.contenedorMarcas img{
-    width: 8%;
-    height: 40px;
+.contenedorMarcas img {
+  width: 8%;
+  height: 40px;
 }
 
-.cartelMarcas{
+.cartelMarcas {
   background-color: #003d80;
   width: 90%;
   height: 50px;
@@ -244,16 +242,14 @@ a{
   color: white;
 }
 
-.cartelMarcas p{
+.cartelMarcas p {
   font-family: "Open Sans", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: initial;
-  font-variation-settings:
-    "wdth" 100;
-    font-size: x-large;
+  font-variation-settings: "wdth" 100;
+  font-size: x-large;
 }
-
 
 /*Productos*/
 .main-container {
@@ -319,7 +315,7 @@ a{
 }
 
 @media (min-width: 768px) {
-  .product img{
+  .product img {
     width: 100%;
     height: 150px;
   }
@@ -353,5 +349,257 @@ a{
 
   .product {
     padding: 8px;
+  }
+}
+
+/*--------------------------------------Pie de pagina-----------------------------------------------------------*/
+/*Pie de pagina*/
+
+.pieDePagina {
+  width: 100%;
+  height: auto; /* Cambiado a auto para que se adapte a contenidos */
+  background-color: #949494;
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos salten a la siguiente fila en pantallas pequeñas */
+  justify-content: space-between; /* Espaciado uniforme en elementos */
+  padding: 20px 10px; /* Añadido un padding para dar espacio interno */
+  box-sizing: border-box; /* Incluye padding en el cálculo del ancho */
+}
+
+.pieDePagina a {
+  text-decoration: none; /* Elimina el subrayado */
+  color: inherit; /* Hace que el color herede del elemento padre */
+  cursor: pointer; /* Opcional, si quieres mantener el puntero como un enlace */
+}
+
+.contenedorLogoPiePagina {
+  width: 30%; /* Mantiene el 30% en pantallas grandes */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedorLogoPiePagina img {
+  width: 50%;
+}
+
+.contenedorInformacion,
+.contenedorAyuda,
+.contenedorRedesSociales {
+  width: 20%; /* Igual ancho para las secciones */
+}
+
+.contenedorInformacion a {
+  display: block;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.tituloPiePagina {
+  /*Estilo Fuente*/
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings: "wdth" 200;
+}
+
+.contenedorRedesSociales a img {
+  width: 10%;
+}
+
+/* Media queries para pantallas medianas */
+@media (max-width: 768px) {
+  .pieDePagina {
+    flex-direction: column; /* Apila verticalmente las secciones */
+    align-items: center;
+    text-align: center; /* Centra el texto y contenido */
+  }
+
+  .contenedorLogoPiePagina,
+  .contenedorInformacion,
+  .contenedorAyuda,
+  .contenedorRedesSociales {
+    width: 90%; /* Aumenta el ancho relativo */
+    margin-bottom: 15px; /* Añade espacio entre las secciones */
+  }
+
+  .contenedorLogoPiePagina img {
+    width: 40%; /* Reduce el tamaño del logo */
+  }
+}
+
+/* Media queries para pantallas ultra pequeñas */
+@media (max-width: 480px) {
+  .contenedorLogoPiePagina img {
+    width: 30%; /* Reduce aún más el tamaño del logo */
+  }
+
+  .contenedorInformacion a,
+  .contenedorAyuda a,
+  .contenedorRedesSociales a {
+    font-size: 0.9em; /* Ajusta el tamaño de texto */
+  }
+}
+
+/*------------------------------------------------Contenedor producto---------------------------------------------------*/
+.contenedorProducto {
+  background-color: #ffffff;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  column-gap: 2rem;
+}
+
+.contenedorImagenesProducto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contenedorImagenesProducto img {
+  width: 80%;
+  height: auto;
+}
+
+.contenedorImagenPrincipal {
+  display: flex;
+}
+
+.contenedorImagenPrincipal img {
+  width: 100%;
+}
+
+.contenedorDetalle {
+  display: grid;
+  grid-template-rows: auto;
+  row-gap: 1rem;
+}
+
+.contenedorTalle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contenedorCantidad {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.botonCantidad {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#agregarCarrito {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#agregarCarrito:hover {
+  background-color: #0056b3;
+}
+
+.contenedorMetodosPagos {
+  margin-top: 20px;
+}
+
+.contenedorPromociones {
+  display: flex;
+  gap: 10px;
+}
+
+.contenedorPromociones button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.contenedorPromociones img {
+  width: 50px;
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+  .contenedorProducto {
+    grid-template-columns: 1fr; /* Se apilan las columnas */
+    row-gap: 1rem;
+  }
+
+  .contenedorImagenesProducto {
+    flex-direction: row; /* Las imágenes en una fila */
+    gap: 10px;
+  }
+
+  .contenedorImagenesProducto img {
+    width: 100px; /* Tamaño reducido para las imágenes */
+  }
+
+
+  .contenedorImagenPrincipal img {
+    width: 80%; /* Imagen principal ocupa toda la fila */
+  }
+}
+
+@media (max-width: 768px) {
+  .contenedorProducto {
+    width: 90%;
+    margin-left: 5%;
+    padding: 10px;
+  }
+
+  .contenedorImagenesProducto img {
+    width: 100px;
+  }
+
+  .contenedorDetalle {
+    row-gap: 0.5rem; /* Espacio más compacto en pantallas pequeñas */
+  }
+
+  #agregarCarrito {
+    width: 100%; /* Botón ocupa toda la fila */
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .contenedorProducto {
+    grid-template-columns: 1fr; /* Todos los elementos en una sola columna */
+  }
+
+  .contenedorImagenesProducto {
+    justify-content: start;
+    gap: 5px;
+  }
+
+  .contenedorImagenesProducto img{
+    width: 108px;
+  }
+
+  .contenedorImagenPrincipal{
+    width: 100%;
+
+  }
+
+  .contenedorImagenPrincipal img{
+    width: 100%;
+  }
+
+  .contenedorPromociones img {
+    width: 40px;
+  }
+
+  .contenedorCantidad {
+    flex-direction: column; /* Botones y cantidad apilados */
+    gap: 5px;
   }
 }
