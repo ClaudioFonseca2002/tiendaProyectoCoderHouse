@@ -6,7 +6,7 @@
 }
 
 /*Estilo Fuente*/
-a {
+a, p{
   font-family: "Open Sans", serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -601,5 +601,71 @@ a {
   .contenedorCantidad {
     flex-direction: column; /* Botones y cantidad apilados */
     gap: 5px;
+  }
+}
+
+/*Productos relacionados*/
+
+.contenedorTextoSugerencia{
+  width: 90%;
+  background-color: #003d80;
+  margin-left: 5%;
+  margin-top: 8%;
+  color: #dfe6e9;
+  display: flex;
+  justify-content: center;
+}
+
+/*Productos relacionados*/
+.contenedorProductosRelacionados {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center; /* Centra los productos */
+  padding: 16px;
+  background-color: #c51b1b;
+}
+
+.contenedorProductosRelacionados {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center; /* Centra los productos */
+  padding: 16px;
+  background-color: #f4f4f4;
+}
+
+.itemRelacionado {
+  flex: 1 1 200px; /* Cada producto tiene un ancho base de 200px y se adapta al espacio */
+  max-width: 300px; /* Máximo ancho para productos grandes */
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.itemRelacionado img {
+  width: 200px;
+  height: 100px;
+  border-radius: 5px;
+  margin-bottom: 8px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .contenedorProductosRelacionados {
+    flex: 1 1 calc(50% - 16px); /* Dos productos por fila en tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .contenedorProductosRelacionados {
+    flex: 1 1 calc(50% - 10px); /* Tres productos por fila */
+  }
+
+  .itemRelacionado{
+    width: 25%;
+    background-color: #ffffff;
   }
 }
