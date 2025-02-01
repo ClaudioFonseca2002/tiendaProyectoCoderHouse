@@ -714,3 +714,161 @@ p {
     font-size: 0.8rem;
   }
 }
+
+/*ContenedorTexto*/
+
+/* Estilos base */
+.contenedorTextoCarrito {
+  width: 90%; /* Ocupa todo el ancho en móviles */
+  margin-left: 5%;
+  background-color: #ffffff;
+  padding-top: 20px; /* Espaciado interno */
+  padding-bottom: 20px; /* Espaciado interno */
+}
+
+.contenedorTextoCarrito p {
+  font-size: 1.7rem; /* Tamaño del texto */
+  margin: 0; /* Elimina márgenes adicionales */
+}
+
+/*Tabla Carrito*/
+
+/* Estilo base de la tabla */
+.tabla-responsive {
+  width: 100%; /* La tabla ocupa todo el ancho disponible */
+  overflow-x: auto; /* Permite desplazamiento horizontal en pantallas pequeñas */
+  margin: 0 auto; /* Centrado */
+}
+
+table {
+  margin-left: 5%;
+  width: 90%; /* Ajusta el ancho de la tabla */
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #002249;
+  color: #ddd;
+}
+
+th,
+td {
+  border: 1px solid #000000;
+  padding: 8px;
+  text-align: left;
+}
+
+td img {
+  width: 150px; /* Tamaño fijo para las imágenes */
+  height: auto;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .contenedorTextoCarrito {
+    padding: 15px; /* Reduce el padding en pantallas pequeñas */
+    font-size: 1.2rem; /* Reduce el tamaño del texto */
+  }
+
+  table {
+    font-size: 14px; /* Reduce el tamaño de fuente */
+  }
+
+  td img {
+    width: 40px; /* Reduce el tamaño de las imágenes */
+  }
+}
+
+@media (max-width: 480px) {
+  table {
+    font-size: 12px; /* Texto más pequeño en pantallas muy pequeñas */
+  }
+
+  td img {
+    width: 30px; /* Imágenes más pequeñas */
+  }
+
+  .contenedorTextoCarrito {
+    font-size: 1rem; /* Texto más pequeño en pantallas muy pequeñas */
+    padding: 10px; /* Espaciado interno reducido */
+  }
+}
+
+.finalizarCompra {
+  margin-top: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+}
+.entrega {
+  width: 45%;
+  background-color: rgb(255, 255, 255);
+}
+
+.precio h3,
+p,
+button {
+  font-size: 19px;
+}
+
+#btnFinalizarCompra {
+  width: 100%;
+  background-color: black;
+  color: #f0f0f0;
+}
+
+/*DetalleCompra*/
+
+.contenedorDetalleCarrito {
+  width: 90%;
+  height: 300px;
+  margin-left: 5%;
+  background-color: #ffffff;
+  border-top: solid black 2px;
+  display: flex;
+}
+
+.contenedorEntrega {
+  width: 50%;
+  background-color: #ffffff;
+}
+
+.textoEnvio {
+  color: #707070;
+}
+
+.titulosCarrito {
+  font-size: x-large;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.contenedorResumen {
+  background-color: #ffffff;
+  width: 50%;
+}
+
+.contenedorItemResumen {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.contenedorBotonesCompra {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente */
+  justify-content: center; /* Centra verticalmente (si el contenedor tiene altura) */
+  gap: 10px; /* Espacio entre botones */
+}
+
+.contenedorBotonesCompra button {
+  display: block;
+  width: 250px;
+}
