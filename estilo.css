@@ -6,7 +6,8 @@
 }
 
 /*Estilo Fuente*/
-a, p{
+a,
+p {
   font-family: "Open Sans", serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -544,7 +545,6 @@ a, p{
     width: 100px; /* Tamaño reducido para las imágenes */
   }
 
-
   .contenedorImagenPrincipal img {
     width: 80%; /* Imagen principal ocupa toda la fila */
   }
@@ -581,16 +581,15 @@ a, p{
     gap: 5px;
   }
 
-  .contenedorImagenesProducto img{
+  .contenedorImagenesProducto img {
     width: 108px;
   }
 
-  .contenedorImagenPrincipal{
+  .contenedorImagenPrincipal {
     width: 100%;
-
   }
 
-  .contenedorImagenPrincipal img{
+  .contenedorImagenPrincipal img {
     width: 100%;
   }
 
@@ -606,7 +605,7 @@ a, p{
 
 /*Productos relacionados*/
 
-.contenedorTextoSugerencia{
+.contenedorTextoSugerencia {
   width: 90%;
   background-color: #003d80;
   margin-left: 5%;
@@ -664,8 +663,54 @@ a, p{
     flex: 1 1 calc(50% - 10px); /* Tres productos por fila */
   }
 
-  .itemRelacionado{
+  .itemRelacionado {
     width: 25%;
     background-color: #ffffff;
+  }
+}
+
+/*-----------------------------------------CARRITO DE COMPRAS--------------------------------------------------*/
+/*Encabezado*/
+.encabezadoCarrito {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #003669;
+}
+
+.contenedorLogoCarrito img {
+  max-width: 150px;
+  height: auto;
+  background-color: #f4f4f4;
+}
+
+.contenedorCompraSegura {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+}
+
+.contenedorCompraSegura img {
+  width: 35px;
+  height: 35px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .encabezadoCarrito {
+    flex-direction: column; /* Apila el contenido */
+    text-align: center;
+  }
+
+  .contenedorLogoCarrito img {
+    max-width: 120px; /* Reduce el tamaño del logo */
+  }
+
+  .contenedorCompraSegura {
+    justify-content: center;
+    font-size: 0.8rem;
   }
 }
