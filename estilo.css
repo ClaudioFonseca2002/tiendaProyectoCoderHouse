@@ -872,3 +872,17 @@ button {
   display: block;
   width: 250px;
 }
+
+@media(max-width:768px){
+  .contenedorDetalleCarrito{
+    flex-direction: column;
+  }
+
+  .contenedorEntrega{
+    width: 90%;
+  }
+
+  .contenedorResumen{
+    width: 100%;
+  }
+}
