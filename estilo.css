@@ -876,6 +876,8 @@ button {
 @media(max-width:768px){
   .contenedorDetalleCarrito{
     flex-direction: column;
+    height: 100%;
+    margin-bottom: 5%;
   }
 
   .contenedorEntrega{
@@ -886,3 +888,4 @@ button {
     width: 100%;
   }
 }
+
