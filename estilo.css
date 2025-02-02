@@ -827,6 +827,7 @@ button {
   width: 90%;
   height: 300px;
   margin-left: 5%;
+  margin-top: 5%;
   background-color: #ffffff;
   border-top: solid black 2px;
   display: flex;
