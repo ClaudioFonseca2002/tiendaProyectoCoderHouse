@@ -898,11 +898,12 @@ button {
   justify-content: center;
   justify-items: center;
   padding-top: 5%;
+  margin-bottom: 5%;
 }
 
 .contenedorFormulario{
   width: 50%;
-  height: 500px;
+  height: 400px;
   border: 2px solid black;
   display: flex;
   flex-direction: column;
@@ -913,9 +914,9 @@ button {
 .contenedorInput{
   width: 90%;
   background-color: #ffffff;
-  padding-top: 50px;
+  padding-top: 30px;
   padding-left: 40px;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 
 .contenedorInput input{
@@ -927,11 +928,12 @@ button {
   width: 74%;
   background-color: #ffffff;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  margin-bottom: 5%;
 }
 
 .botonVolver{
-  width: 50%;
+  width: 30%;
   padding: 10px;
   border: none;
   border-radius: 5px;
@@ -941,6 +943,7 @@ button {
   cursor: pointer;
   transition: all 0.3s ease;
   text-align: center;
+  margin-right: 2%;
 }
 
 .botonSucces{
