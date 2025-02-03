@@ -156,7 +156,7 @@ p {
   color: beige;
 }
 
-/*---------------------------------------Responsive Media header------------------------------------------*/
+/*---------------------------------------Responsive Media header(index.html)------------------------------------------*/
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
@@ -196,7 +196,7 @@ p {
   }
 }
 
-/*---------------------------------------BANNER------------------------------------------------------*/
+/*---------------------------------------BANNER(index.html)------------------------------------------------------*/
 .contenedorBanner {
   width: 90%;
   display: flex;
@@ -316,12 +316,7 @@ p {
   border-radius: 10px;
 }
 
-@media (min-width: 768px) {
-  .product img {
-    width: 100%;
-    height: 150px;
-  }
-}
+/*-----------------------------------MEDIA para productos responsive----------------------------------------*/
 
 /* Media Queries */
 @media (min-width: 768px) {
@@ -337,6 +332,11 @@ p {
   .products {
     flex: 3;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .product img {
+    width: 100%;
+    height: 150px;
   }
 }
 
@@ -370,15 +370,15 @@ p {
 
 .pieDePagina a {
   text-decoration: none; /* Elimina el subrayado */
-  color: inherit; /* Hace que el color herede del elemento padre */
-  cursor: pointer; /* Opcional, si quieres mantener el puntero como un enlace */
+  color: inherit; 
+  cursor: pointer;
 }
 
 .contenedorLogoPiePagina {
   width: 30%; /* Mantiene el 30% en pantallas grandes */
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center
 }
 
 .contenedorLogoPiePagina img {
@@ -409,6 +409,7 @@ p {
 .contenedorRedesSociales a img {
   width: 10%;
 }
+/*-----------------------------Pie de pagina responsive----------------------------------------------------*/
 
 /* Media queries para pantallas medianas */
 @media (max-width: 768px) {
