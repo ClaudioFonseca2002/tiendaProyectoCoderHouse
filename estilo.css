@@ -957,3 +957,17 @@ button {
   cursor: pointer;
   text-align: center;
 }
+
+
+@media(max-width:768px){
+  .contenedorFormulario{
+    width: 90%;
+  }
+  .contenedorInput{
+    width: 100%;
+    background-color: #ffffff;
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+  }
+}
