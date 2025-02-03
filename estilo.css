@@ -19,8 +19,9 @@ p {
 .header {
   width: 100%;
   height: 100px;
-  background-color: aqua;
+  background-color: rgb(255, 255, 255);
   display: flex;
+  border-bottom: 1px solid #757575;
 }
 
 .contenedorLogo {
@@ -890,3 +891,66 @@ button {
   }
 }
 
+/*---------------------------------Estilo registro.html--------------------------------------*/
+
+.mainRegistro{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  padding-top: 5%;
+}
+
+.contenedorFormulario{
+  width: 50%;
+  height: 500px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.contenedorInput{
+  width: 90%;
+  background-color: #ffffff;
+  padding-top: 50px;
+  padding-left: 40px;
+  padding-bottom: 50px;
+}
+
+.contenedorInput input{
+  width: 90%;
+  height: 30px;
+}
+
+.contenedorBotonesRegistro {
+  width: 74%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.botonVolver{
+  width: 50%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #333333;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.botonSucces{
+  width: 70%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(59, 206, 66);
+  border: 1px solid #333333;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  text-align: center;
+}
