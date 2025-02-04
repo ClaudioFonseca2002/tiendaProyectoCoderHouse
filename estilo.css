@@ -696,23 +696,27 @@ p {
 /*-----------------------------------------CARRITO DE COMPRAS--------------------------------------------------*/
 /*Encabezado*/
 .encabezadoCarrito {
+  /*Flexbox*/
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /*Estilo*/
   padding: 10px 20px;
   background-color: #f4f4f4;
   border-bottom: 1px solid #003669;
 }
 
 .contenedorLogoCarrito img {
-  max-width: 150px;
+  max-width: 150px;/*Tamaño maximo*/
   height: auto;
-  background-color: #f4f4f4;
+  background-color: #f4f4f4;/*Color de fondo*/
 }
 
 .contenedorCompraSegura {
+  /*Flexbox*/
   display: flex;
   align-items: center;
+  /*Estilo*/
   gap: 8px;
   font-size: 0.9rem;
 }
@@ -722,7 +726,7 @@ p {
   height: 35px;
 }
 
-/* Responsive styles */
+/* Estilos para diferentes pantallas (Encabezado carrito)  */
 @media (max-width: 768px) {
   .encabezadoCarrito {
     flex-direction: column; /* Apila el contenido */
