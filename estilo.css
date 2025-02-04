@@ -793,7 +793,7 @@ td img {
   vertical-align: middle;
 }
 
-/* Responsividad */
+/* Estilos para que carrito se adapte a distintas pantallas */
 @media (max-width: 768px) {
   .contenedorTextoCarrito {
     padding: 15px; /* Reduce el padding en pantallas pequeñas */
@@ -825,10 +825,11 @@ td img {
 }
 
 .finalizarCompra {
+  /*Margenes*/
   margin-top: 10%;
   margin-left: 5%;
   margin-right: 5%;
-  width: 90%;
+  width: 90%;/*Ancho*/
   background-color: rgb(255, 255, 255);
   display: flex;
 }
@@ -902,6 +903,7 @@ button {
   width: 250px;
 }
 
+/*Estilos para que detalle carrito se adapte a distintas pantallas*/
 @media (max-width: 768px) {
   .contenedorDetalleCarrito {
     flex-direction: column;
@@ -921,22 +923,27 @@ button {
 /*---------------------------------Estilo registro.html--------------------------------------*/
 
 .mainRegistro {
+  /*Flexbox*/
   display: flex;
   justify-content: center;
   justify-items: center;
+  /*Estilo*/
   padding-top: 5%;
   margin-bottom: 5%;
 }
 
 .contenedorFormulario {
+  /*Estilo*/
   width: 50%;
   height: 400px;
   border: 2px solid black;
+  /*Flexbox*/
   display: flex;
   flex-direction: column;
   justify-items: center;
   align-items: center;
 }
+
 
 .contenedorInput {
   width: 90%;
@@ -959,6 +966,7 @@ button {
   margin-bottom: 5%;
 }
 
+/*Botones*/
 .botonVolver {
   width: 30%;
   padding: 10px;
@@ -985,6 +993,7 @@ button {
   text-align: center;
 }
 
+/*Estilos para que registro.html se adapte a distintas panatallas*/
 @media (max-width: 768px) {
   .contenedorFormulario {
     width: 90%;
