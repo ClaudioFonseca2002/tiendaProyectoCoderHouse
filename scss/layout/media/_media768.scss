@@ -24,7 +24,7 @@
       display: flex;
       align-items: center;
       justify-content: space-evenly;
-  
+
       img {
         width: 25px;
         margin-left: 4%;
@@ -36,5 +36,23 @@
       width: 100%;
       justify-content: center;
     }
+  }
+
+  /*-------------------------------Categoria-----------------------------------------*/
+
+  .menu {
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .contenedorCategorias .menu a,
+  .menu button {
+    flex: 1 1 45%; /* Dos por fila */
+  }
+
+  .menu > * {
+    flex: none;
+    width: 100%; /* Ocupan todo el ancho disponible */
   }
 }
