@@ -69,7 +69,7 @@
   .header {
     flex-direction: column;
     height: auto;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 254);
   }
   .header .contenedorLogo {
     width: 100%;
