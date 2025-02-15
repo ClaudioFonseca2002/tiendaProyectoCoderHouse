@@ -15,57 +15,6 @@ p {
   font-variation-settings: "wdth" 100;
 }
 
-/*---------------------------------------Responsive Media header(index.html)------------------------------------------*/
-@media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    height: auto;
-  }
-
-  .contenedorLogo {
-    width: 100%;
-    height: auto;
-  }
-
-  .contenedorUsuario {
-    width: 100%;
-    padding-top: 25px;
-    padding-bottom: 25px;
-  }
-
-  .contenedorBuscador {
-    width: 100%;
-    justify-content: center;
-  }
-
-  .menu {
-    flex-direction: row;
-    align-items: center;
-    gap: 15px;
-  }
-
-  .contenedorCategorias .menu a,
-  .menu button {
-    flex: 1 1 45%; /* Dos por fila */
-  }
-
-  .menu > * {
-    flex: none;
-    width: 100%; /* Ocupan todo el ancho disponible */
-  }
-}
-
-/*---------------------------------------BANNER(index.html)------------------------------------------------------*/
-.contenedorBanner {
-  width: 90%;
-  display: flex;
-  margin-left: 5%;
-}
-
-.contenedorBanner img {
-  width: 100%;
-}
-
 /*Banner responsive*/
 
 @media (max-width: 768px) {
