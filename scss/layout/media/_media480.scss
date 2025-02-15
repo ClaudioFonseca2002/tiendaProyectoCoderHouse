@@ -1,0 +1,43 @@
+@media (max-width: 480px) {
+    .contenedorInformacion{
+        background-color: #949494;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .contenedorAyuda{
+        background-color: #949494;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .contenedorRedesSociales {
+        width: 400px;
+        background-color: #949494;
+        text-align: center; // Centra el texto y la imagen
+    
+        p {
+            font-size: 18px; // Ajusta el tamaño del texto si es necesario
+            margin-bottom: 10px; // Espacio entre el texto y el enlace
+        }
+    
+        a {
+            background-color: #949494;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            padding-left: 15px;
+    
+            img {
+                width: 100px; // Ajusta el tamaño de la imagen
+                height: auto;
+                margin-top: 5px;
+            }
+        }
+    }
+}

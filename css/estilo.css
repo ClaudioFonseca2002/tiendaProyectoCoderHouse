@@ -116,44 +116,6 @@ p {
   }
 }
 
-/*--------------------------------------Pie de pagina-----------------------------------------------------------*/
-
-/*-----------------------------Pie de pagina responsive----------------------------------------------------*/
-
-/* Media queries para pantallas medianas */
-@media (max-width: 768px) {
-  .pieDePagina {
-    flex-direction: column; /* Apila verticalmente las secciones */
-    align-items: center;
-    text-align: center; /* Centra el texto y contenido */
-  }
-
-  .contenedorLogoPiePagina,
-  .contenedorInformacion,
-  .contenedorAyuda,
-  .contenedorRedesSociales {
-    width: 90%; /* Aumenta el ancho relativo */
-    margin-bottom: 15px; /* Añade espacio entre las secciones */
-  }
-
-  .contenedorLogoPiePagina img {
-    width: 40%; /* Reduce el tamaño del logo */
-  }
-}
-
-/* Media queries para pantallas ultra pequeñas */
-@media (max-width: 480px) {
-  .contenedorLogoPiePagina img {
-    width: 30%; /* Reduce aún más el tamaño del logo */
-  }
-
-  .contenedorInformacion a,
-  .contenedorAyuda a,
-  .contenedorRedesSociales a {
-    font-size: 0.9em; /* Ajusta el tamaño de texto */
-  }
-}
-
 /*------------------------------------------------Contenedor producto(producto.html)---------------------------------------------------*/
 .contenedorProducto {
   background-color: #ffffff; /*Color de fondo de contenedor*/

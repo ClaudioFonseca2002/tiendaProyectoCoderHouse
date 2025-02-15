@@ -67,6 +67,44 @@
   background-color: #003d80;
 }
 
+@media (max-width: 480px) {
+  .contenedorInformacion {
+    background-color: #949494;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  .contenedorAyuda {
+    background-color: #949494;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  .contenedorRedesSociales {
+    width: 400px;
+    background-color: #949494;
+    text-align: center;
+  }
+  .contenedorRedesSociales p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .contenedorRedesSociales a {
+    background-color: #949494;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    padding-left: 15px;
+  }
+  .contenedorRedesSociales a img {
+    width: 100px;
+    height: auto;
+    margin-top: 5px;
+  }
+}
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
@@ -334,7 +372,7 @@
 }
 
 .contenedorRedesSociales a img {
-  width: 10%;
+  width: 15%;
 }
 
 /*# sourceMappingURL=style.css.map */
