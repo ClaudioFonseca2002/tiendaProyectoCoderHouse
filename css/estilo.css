@@ -15,52 +15,6 @@ p {
   font-variation-settings: "wdth" 100;
 }
 
-/*Banner responsive*/
-
-@media (max-width: 768px) {
-  .contenedorBanner {
-    width: 100%;
-    margin-left: 0%;
-  }
-}
-
-/*Marcas*/
-
-.contenedorMarcas {
-  width: 90%;
-  margin-left: 5%;
-  margin-top: 5%;
-  margin-bottom: 55;
-  display: flex;
-  justify-content: space-around;
-}
-
-.contenedorMarcas img {
-  width: 8%;
-  height: 40px;
-}
-
-.cartelMarcas {
-  background-color: #003d80;
-  width: 90%;
-  height: 50px;
-  margin-left: 5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 4%;
-  color: white;
-}
-
-.cartelMarcas p {
-  font-family: "Open Sans", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: initial;
-  font-variation-settings: "wdth" 100;
-  font-size: x-large;
-}
-
 /*Productos*/
 .main-container {
   display: flex;
@@ -508,9 +462,9 @@ p {
 }
 
 .contenedorLogoCarrito img {
-  max-width: 150px;/*Tamaño maximo*/
+  max-width: 150px; /*Tamaño maximo*/
   height: auto;
-  background-color: #f4f4f4;/*Color de fondo*/
+  background-color: #f4f4f4; /*Color de fondo*/
 }
 
 .contenedorCompraSegura {
@@ -630,7 +584,7 @@ td img {
   margin-top: 10%;
   margin-left: 5%;
   margin-right: 5%;
-  width: 90%;/*Ancho*/
+  width: 90%; /*Ancho*/
   background-color: rgb(255, 255, 255);
   display: flex;
 }
@@ -744,7 +698,6 @@ button {
   justify-items: center;
   align-items: center;
 }
-
 
 .contenedorInput {
   width: 90%;
