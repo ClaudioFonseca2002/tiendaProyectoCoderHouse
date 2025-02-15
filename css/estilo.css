@@ -117,60 +117,7 @@ p {
 }
 
 /*--------------------------------------Pie de pagina-----------------------------------------------------------*/
-/*Pie de pagina*/
 
-.pieDePagina {
-  width: 100%;
-  height: auto; /* Cambiado a auto para que se adapte a contenidos */
-  background-color: #949494;
-  display: flex;
-  flex-wrap: wrap; /* Permite que los elementos salten a la siguiente fila en pantallas pequeñas */
-  justify-content: space-between; /* Espaciado uniforme en elementos */
-  padding: 20px 10px; /* Añadido un padding para dar espacio interno */
-  box-sizing: border-box; /* Incluye padding en el cálculo del ancho */
-}
-
-.pieDePagina a {
-  text-decoration: none; /* Elimina el subrayado */
-  color: inherit;
-  cursor: pointer;
-}
-
-.contenedorLogoPiePagina {
-  width: 30%; /* Mantiene el 30% en pantallas grandes */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.contenedorLogoPiePagina img {
-  width: 50%;
-}
-
-.contenedorInformacion,
-.contenedorAyuda,
-.contenedorRedesSociales {
-  width: 20%; /* Igual ancho para las secciones */
-}
-
-.contenedorInformacion a {
-  display: block;
-  margin-top: 2%;
-  margin-bottom: 2%;
-}
-
-.tituloPiePagina {
-  /*Estilo Fuente*/
-  font-family: "Open Sans", serif;
-  font-optical-sizing: auto;
-  font-weight: 800;
-  font-style: normal;
-  font-variation-settings: "wdth" 200;
-}
-
-.contenedorRedesSociales a img {
-  width: 10%;
-}
 /*-----------------------------Pie de pagina responsive----------------------------------------------------*/
 
 /* Media queries para pantallas medianas */

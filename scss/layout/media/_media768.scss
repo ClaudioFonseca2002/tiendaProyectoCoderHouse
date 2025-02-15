@@ -65,25 +65,25 @@
     margin-left: 0%;
   }
 
-  /*Contenido principal(index.html)*/
   .main-container {
-    flex-direction: row;
-    gap: 40px;
-  
-    .banner {
-      flex: 1;
-    }
-  
-    .products {
-      flex: 3;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-  
-    .product {
-      img {
-        width: 100%;
-        height: 150px;
-      }
-    }
+    border: 2px solid black;
+  }
+
+  .pieDePagina {
+    flex-direction: column; /* Apila verticalmente las secciones */
+    align-items: center;
+    text-align: center; /* Centra el texto y contenido */
+  }
+
+  .contenedorLogoPiePagina,
+  .contenedorInformacion,
+  .contenedorAyuda,
+  .contenedorRedesSociales {
+    width: 90%; /* Aumenta el ancho relativo */
+    margin-bottom: 15px; /* Añade espacio entre las secciones */
+  }
+
+  .contenedorLogoPiePagina img {
+    width: 40%; /* Reduce el tamaño del logo */
   }
 }
