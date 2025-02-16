@@ -1,0 +1,48 @@
+.contenedorTextoSugerencia {
+  width: 90%; // Ancho
+  background-color: #003d80;
+  color: #dfe6e9;
+
+  // Márgenes
+  margin-left: 5%;
+  margin-top: 8%;
+
+  // Flexbox
+  display: flex;
+  justify-content: center;
+}
+
+// Productos relacionados
+.contenedorProductosRelacionados {
+  // Flexbox
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center; // Centra los productos
+  padding: 16px;
+
+  &.background {
+    background-color: #c51b1b;
+  }
+
+  &.alternate-background {
+    background-color: #f4f4f4;
+  }
+}
+
+.itemRelacionado {
+  flex: 1 1 200px; // Cada producto tiene un ancho base de 200px y se adapta al espacio
+  max-width: 300px; // Máximo ancho para productos grandes
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+
+  img {
+    width: 200px;
+    height: 100px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+  }
+}
