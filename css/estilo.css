@@ -1,33 +1,4 @@
-/* Estilos para que carrito se adapte a distintas pantallas */
-@media (max-width: 768px) {
-  .contenedorTextoCarrito {
-    padding: 15px; /* Reduce el padding en pantallas pequeñas */
-    font-size: 1.2rem; /* Reduce el tamaño del texto */
-  }
 
-  table {
-    font-size: 14px; /* Reduce el tamaño de fuente */
-  }
-
-  td img {
-    width: 40px; /* Reduce el tamaño de las imágenes */
-  }
-}
-
-@media (max-width: 480px) {
-  table {
-    font-size: 12px; /* Texto más pequeño en pantallas muy pequeñas */
-  }
-
-  td img {
-    width: 30px; /* Imágenes más pequeñas */
-  }
-
-  .contenedorTextoCarrito {
-    font-size: 1rem; /* Texto más pequeño en pantallas muy pequeñas */
-    padding: 10px; /* Espaciado interno reducido */
-  }
-}
 
 .finalizarCompra {
   /*Margenes*/

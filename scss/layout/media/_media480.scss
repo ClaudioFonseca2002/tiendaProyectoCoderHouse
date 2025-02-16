@@ -96,4 +96,17 @@
         padding: 8px 16px;
         font-size: 10px;
       }
+
+      table {
+        font-size: 12px; /* Texto más pequeño en pantallas muy pequeñas */
+      }
+    
+      td img {
+        width: 30px; /* Imágenes más pequeñas */
+      }
+    
+      .contenedorTextoCarrito {
+        font-size: 1rem; /* Texto más pequeño en pantallas muy pequeñas */
+        padding: 10px; /* Espaciado interno reducido */
+      }
 }
