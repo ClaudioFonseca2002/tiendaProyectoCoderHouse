@@ -144,16 +144,28 @@
     }
   }
 
-  .mainRegistro{
+  .mainRegistro {
     display: flex;
     justify-content: center;
-    
-    .contenedorFormulario{
+
+    .contenedorFormulario {
       width: 90%;
-      .contenedorBotonesRegistro{
+      .contenedorBotonesRegistro {
         width: 70%;
-        gap: 10px ;
+        gap: 10px;
       }
+    }
+  }
+
+  .encabezadoCarrito {
+    flex-direction: column; /* Apila el contenido */
+    text-align: center;
+    img {
+      max-width: 120px; /* Reduce el tamaño del logo */
+    }
+    .contenedorCompraSegura {
+      justify-content: center;
+      font-size: 0.8rem;
     }
   }
 }

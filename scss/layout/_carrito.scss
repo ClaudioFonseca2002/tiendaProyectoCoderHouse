@@ -1,0 +1,45 @@
+.contenedorTextoCarrito {
+  width: 90%; // Ocupa todo el ancho en móviles
+  margin-left: 5%;
+  background-color: #ffffff;
+  padding: 20px 0; // Espaciado interno arriba y abajo
+
+  p {
+    font-size: 1.7rem; // Tamaño del texto
+    margin: 0; // Elimina márgenes adicionales
+  }
+}
+
+/* Tabla Carrito */
+.tabla-responsive {
+  width: 100%; // La tabla ocupa todo el ancho disponible
+  overflow-x: auto; // Permite desplazamiento horizontal en pantallas pequeñas
+  margin: 0 auto; // Centrado
+}
+
+table {
+  margin-left: 5%;
+  width: 90%; // Ajusta el ancho de la tabla
+  border-collapse: collapse;
+
+  thead {
+    background-color: #002249;
+    color: #ddd;
+  }
+
+  th,
+  td {
+    border: 1px solid #000000;
+    padding: 8px;
+    text-align: left;
+  }
+
+  td {
+    img {
+      width: 150px; // Tamaño fijo para las imágenes
+      height: auto;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+  }
+}
