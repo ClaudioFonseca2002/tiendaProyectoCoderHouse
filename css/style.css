@@ -290,6 +290,17 @@
   .contenedorProducto a {
     font-size: 0.9rem;
   }
+  .mainRegistro {
+    display: flex;
+    justify-content: center;
+  }
+  .mainRegistro .contenedorFormulario {
+    width: 90%;
+  }
+  .mainRegistro .contenedorFormulario .contenedorBotonesRegistro {
+    width: 70%;
+    gap: 10px;
+  }
 }
 /* Media Queries */
 @media (max-width: 992px) {
@@ -639,7 +650,8 @@
   width: 90%;
   background-color: #ffffff;
   padding-top: 30px;
-  padding-left: 40px;
+  padding-left: 35px;
+  padding-right: 9px;
   padding-bottom: 40px;
 }
 .contenedorInput input {

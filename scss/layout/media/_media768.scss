@@ -143,4 +143,17 @@
       font-size: 0.9rem; // Puedes ajustar este valor según tus necesidades
     }
   }
+
+  .mainRegistro{
+    display: flex;
+    justify-content: center;
+    
+    .contenedorFormulario{
+      width: 90%;
+      .contenedorBotonesRegistro{
+        width: 70%;
+        gap: 10px ;
+      }
+    }
+  }
 }

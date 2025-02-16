@@ -27,4 +27,17 @@
       justify-content: flex-start;
     }
   }
+
+  .mainRegistro{
+    display: flex;
+    justify-content: center;
+    
+    .contenedorFormulario{
+      width: 90%;
+      .contenedorBotonesRegistro{
+        width: 70%;
+        gap: 100px ;
+      }
+    }
+  }
 }
