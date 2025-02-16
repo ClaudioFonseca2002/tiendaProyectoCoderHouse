@@ -168,6 +168,19 @@
       font-size: 0.8rem;
     }
   }
+
+  .contenedorTextoCarrito {
+    padding: 15px; /* Reduce el padding en pantallas pequeñas */
+    font-size: 1.2rem; /* Reduce el tamaño del texto */
+  }
+
+  table {
+    font-size: 14px; /* Reduce el tamaño de fuente */
+  }
+
+  td img {
+    width: 40px; /* Reduce el tamaño de las imágenes */
+  }
 }
 
 /* Media Queries */
