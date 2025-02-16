@@ -1,20 +1,3 @@
-/*Estilo general*/
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
-
-/*Estilo Fuente*/
-a,
-p {
-  font-family: "Open Sans", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
-}
-
 
 /*-----------------------------------MEDIA para productos responsive----------------------------------------*/
 
@@ -25,56 +8,8 @@ p {
 /*------------------------------------MEDIA(producto.html-responsive)--------------------------------------------*/
 
 /*--------------------------------------MEDIA(productos relacionados -> producto.html responsive)*/
-@media (max-width: 768px) {
-  .contenedorProductosRelacionados {
-    flex: 1 1 calc(50% - 16px); /* Dos productos por fila en tablets */
-  }
-}
-
-@media (max-width: 480px) {
-  .contenedorProductosRelacionados {
-    flex: 1 1 calc(50% - 10px); /* Tres productos por fila */
-  }
-
-  .itemRelacionado {
-    width: 25%;
-    background-color: #ffffff;
-  }
-}
 
 /*-----------------------------------------CARRITO DE COMPRAS--------------------------------------------------*/
-/*Encabezado*/
-.encabezadoCarrito {
-  /*Flexbox*/
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  /*Estilo*/
-  padding: 10px 20px;
-  background-color: #f4f4f4;
-  border-bottom: 1px solid #003669;
-}
-
-.contenedorLogoCarrito img {
-  max-width: 150px; /*Tamaño maximo*/
-  height: auto;
-  background-color: #f4f4f4; /*Color de fondo*/
-}
-
-.contenedorCompraSegura {
-  /*Flexbox*/
-  display: flex;
-  align-items: center;
-  /*Estilo*/
-  gap: 8px;
-  font-size: 0.9rem;
-}
-
-.contenedorCompraSegura img {
-  width: 35px;
-  height: 35px;
-}
-
 /* Estilos para diferentes pantallas (Encabezado carrito)  */
 @media (max-width: 768px) {
   .encabezadoCarrito {
@@ -269,20 +204,3 @@ button {
   }
 }
 
-/*---------------------------------Estilo registro.html--------------------------------------*/
-
-
-
-/*Estilos para que registro.html se adapte a distintas panatallas*/
-@media (max-width: 768px) {
-  .contenedorFormulario {
-    width: 90%;
-  }
-  .contenedorInput {
-    width: 100%;
-    background-color: #ffffff;
-    padding-top: 30px;
-    padding-left: 40px;
-    padding-bottom: 40px;
-  }
-}

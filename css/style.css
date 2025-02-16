@@ -736,4 +736,29 @@ p {
   font-variation-settings: "wdth" 100;
 }
 
+/* Encabezado */
+.encabezadoCarrito {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #003669;
+}
+.encabezadoCarrito .contenedorLogoCarrito img {
+  max-width: 150px;
+  height: auto;
+  background-color: #f4f4f4;
+}
+.encabezadoCarrito .contenedorCompraSegura {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+}
+.encabezadoCarrito .contenedorCompraSegura img {
+  width: 35px;
+  height: 35px;
+}
+
 /*# sourceMappingURL=style.css.map */
