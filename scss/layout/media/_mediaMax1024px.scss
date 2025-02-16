@@ -1,0 +1,30 @@
+@media screen and (max-width: 1024px) {
+  .contenedorProducto {
+    grid-template-columns: 1fr 1fr; /* Dos columnas */
+    column-gap: 1rem;
+
+    .contenedorImagenesProducto {
+      flex-direction: row;
+      justify-content: center;
+      gap: 10px;
+
+      img {
+        width: 30%;
+      }
+    }
+
+    .contenedorImagenPrincipal {
+      img {
+        width: 100%;
+      }
+    }
+
+    .contenedorDetalle {
+      row-gap: 0.5rem;
+    }
+
+    .contenedorTalle {
+      justify-content: flex-start;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+/* Media Queries */
+@media (max-width: 992px) {
+  .contenedorProducto {
+    grid-template-columns: 1fr; // Se apilan las columnas
+    row-gap: 1rem;
+  }
+
+  .contenedorImagenesProducto {
+    flex-direction: row; // Las imágenes en una fila
+    gap: 10px;
+
+    img {
+      width: 100px; // Tamaño reducido para las imágenes
+    }
+  }
+
+  .contenedorImagenPrincipal {
+    img {
+      width: 80%; // Imagen principal ocupa toda la fila
+    }
+  }
+}

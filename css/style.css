@@ -104,6 +104,76 @@
     height: auto;
     margin-top: 5px;
   }
+  .contenedorProducto {
+    padding: 10px;
+    margin: 5% auto;
+  }
+  .contenedorProducto .contenedorImagenesProducto {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  .contenedorProducto .contenedorImagenesProducto img {
+    width: 100%; /* Imágenes más pequeñas */
+  }
+  .contenedorProducto .contenedorImagenPrincipal img {
+    width: 100%; /* Imagen principal más pequeña */
+  }
+  .contenedorProducto .contenedorDetalle {
+    width: 100%;
+  }
+  .contenedorProducto .contenedorTalle {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .contenedorProducto .contenedorCantidad {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .contenedorProducto .contenedorCantidad button {
+    font-size: 10px; /* Botones más pequeños */
+    padding: 4px 7px;
+  }
+  .contenedorProducto .contenedorMetodosPagos {
+    text-align: center;
+  }
+  .contenedorProducto .contenedorPromociones {
+    justify-content: center;
+  }
+  .contenedorProducto .contenedorPromociones img {
+    width: 40px; /* Logos de pago más pequeños */
+  }
+  .contenedorProducto #agregarCarrito {
+    padding: 8px 16px;
+    font-size: 10px;
+  }
+}
+@media (max-width: 576px) {
+  .contenedorProducto {
+    grid-template-columns: 1fr;
+    background-color: aqua;
+  }
+  .contenedorImagenesProducto {
+    justify-content: start;
+    gap: 5px;
+  }
+  .contenedorImagenesProducto img {
+    width: 108px;
+  }
+  .contenedorImagenPrincipal {
+    width: 100%;
+  }
+  .contenedorImagenPrincipal img {
+    width: 100%;
+  }
+  .contenedorPromociones img {
+    width: 40px;
+  }
+  .contenedorCantidad {
+    flex-direction: column;
+    gap: 5px;
+  }
 }
 @media (max-width: 768px) {
   .header {
@@ -175,6 +245,67 @@
   }
   .contenedorLogoPiePagina img {
     width: 40%; /* Reduce el tamaño del logo */
+  }
+  .contenedorProducto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contenedorProducto .contenedorImagenesProducto {
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+  }
+  .contenedorProducto .contenedorImagenesProducto img {
+    width: 25%;
+  }
+  .contenedorProducto .contenedorImagenPrincipal img {
+    width: 100%;
+  }
+  .contenedorProducto .contenedorDetalle {
+    text-align: center;
+    width: 100%;
+  }
+  .contenedorProducto .contenedorTalle {
+    justify-content: center;
+  }
+  .contenedorProducto .contenedorCantidad {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contenedorProducto .contenedorMetodosPagos {
+    text-align: center;
+  }
+  .contenedorProducto .contenedorPromociones {
+    justify-content: center;
+  }
+  .contenedorProducto p,
+  .contenedorProducto h1,
+  .contenedorProducto h2,
+  .contenedorProducto h3,
+  .contenedorProducto h4,
+  .contenedorProducto h5,
+  .contenedorProducto h6,
+  .contenedorProducto span,
+  .contenedorProducto a {
+    font-size: 0.9rem;
+  }
+}
+/* Media Queries */
+@media (max-width: 992px) {
+  .contenedorProducto {
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+  }
+  .contenedorImagenesProducto {
+    flex-direction: row;
+    gap: 10px;
+  }
+  .contenedorImagenesProducto img {
+    width: 100px;
+  }
+  .contenedorImagenPrincipal img {
+    width: 80%;
   }
 }
 .contenedorCategorias {
@@ -373,6 +504,77 @@
 
 .contenedorRedesSociales a img {
   width: 15%;
+}
+
+.contenedorProducto {
+  background-color: #ffffff;
+  width: 90%;
+  margin: 5% auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  column-gap: 2rem;
+}
+.contenedorProducto .contenedorImagenesProducto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contenedorProducto .contenedorImagenesProducto img {
+  width: 80%;
+  height: auto;
+}
+.contenedorProducto .contenedorImagenPrincipal {
+  display: flex;
+}
+.contenedorProducto .contenedorImagenPrincipal img {
+  width: 100%;
+}
+.contenedorProducto .contenedorDetalle {
+  display: grid;
+  grid-template-rows: auto;
+  row-gap: 1rem;
+}
+.contenedorProducto .contenedorTalle {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.contenedorProducto .contenedorCantidad {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+.contenedorProducto .botonCantidad {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.contenedorProducto #agregarCarrito {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contenedorProducto #agregarCarrito:hover {
+  background-color: #0056b3;
+}
+.contenedorProducto .contenedorMetodosPagos {
+  margin-top: 20px;
+}
+.contenedorProducto .contenedorPromociones {
+  display: flex;
+  gap: 10px;
+}
+.contenedorProducto .contenedorPromociones button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.contenedorProducto .contenedorPromociones img {
+  width: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

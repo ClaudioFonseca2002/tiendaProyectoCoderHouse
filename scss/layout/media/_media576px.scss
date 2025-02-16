@@ -1,0 +1,34 @@
+@media (max-width: 576px) {
+  .contenedorProducto {
+    grid-template-columns: 1fr; // Todos los elementos en una sola columna
+    background-color: aqua;
+  }
+
+  .contenedorImagenesProducto {
+    justify-content: start;
+    gap: 5px;
+
+    img {
+      width: 108px;
+    }
+  }
+
+  .contenedorImagenPrincipal {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .contenedorPromociones {
+    img {
+      width: 40px;
+    }
+  }
+
+  .contenedorCantidad {
+    flex-direction: column; // Botones y cantidad apilados
+    gap: 5px;
+  }
+}

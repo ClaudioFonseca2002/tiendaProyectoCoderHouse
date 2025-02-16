@@ -40,4 +40,60 @@
             }
         }
     }
+
+    .contenedorProducto {
+        padding: 10px;
+        margin: 5% auto;
+      }
+    
+      .contenedorProducto .contenedorImagenesProducto {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+      }
+    
+      .contenedorProducto .contenedorImagenesProducto img {
+        width: 100%; /* Imágenes más pequeñas */
+      }
+    
+      .contenedorProducto .contenedorImagenPrincipal img {
+        width: 100%; /* Imagen principal más pequeña */
+      }
+    
+      .contenedorProducto .contenedorDetalle {
+        width: 100%;
+      }
+    
+      .contenedorProducto .contenedorTalle {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    
+      .contenedorProducto .contenedorCantidad {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+    
+      .contenedorProducto .contenedorCantidad button {
+        font-size: 10px; /* Botones más pequeños */
+        padding: 4px 7px;
+      }
+    
+      .contenedorProducto .contenedorMetodosPagos {
+        text-align: center;
+      }
+    
+      .contenedorProducto .contenedorPromociones {
+        justify-content: center;
+      }
+    
+      .contenedorProducto .contenedorPromociones img {
+        width: 40px; /* Logos de pago más pequeños */
+      }
+    
+      .contenedorProducto #agregarCarrito {
+        padding: 8px 16px;
+        font-size: 10px;
+      }
 }
