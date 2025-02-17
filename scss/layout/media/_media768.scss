@@ -66,9 +66,21 @@
   }
 
   .main-container {
-    border: 2px solid black;
+    flex-direction: column; /* Cambia a columna */
+    align-items: center; /* Centra los elementos */
   }
 
+  .banner {
+    width: 100%; /* Ocupar todo el ancho */
+    text-align: center;
+  }
+
+  .products {
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Ajusta el tamaño de las tarjetas */
+  }
+
+  /*-------------Pie de Pagina----------------------------------------------------*/
   .pieDePagina {
     flex-direction: column; /* Apila verticalmente las secciones */
     align-items: center;

@@ -68,6 +68,7 @@
 }
 
 @media (max-width: 480px) {
+  /*------------------------------------------Inicio Media footer--------------------------------------------*/
   .contenedorInformacion {
     background-color: #949494;
     display: flex;
@@ -104,6 +105,8 @@
     height: auto;
     margin-top: 5px;
   }
+  /*------------------------------------------Fin Media footer-------------------------------------------------*/
+  /*------------------------------------------Inicio Media Producto--------------------------------------------*/
   .contenedorProducto {
     padding: 10px;
     margin: 5% auto;
@@ -148,6 +151,8 @@
     padding: 8px 16px;
     font-size: 10px;
   }
+  /*------------------------------------------Fin Media Producto----------------------------------------------*/
+  /*------------------------------------------Inicio Media Carrito--------------------------------------------*/
   table {
     font-size: 12px; /* Texto más pequeño en pantallas muy pequeñas */
   }
@@ -158,6 +163,7 @@
     font-size: 1rem; /* Texto más pequeño en pantallas muy pequeñas */
     padding: 10px; /* Espaciado interno reducido */
   }
+  /*------------------------------------------Fin Media Carrito-----------------------------------------------*/
 }
 @media (max-width: 576px) {
   .contenedorProducto {
@@ -248,8 +254,18 @@
     margin-left: 0%;
   }
   .main-container {
-    border: 2px solid black;
+    flex-direction: column; /* Cambia a columna */
+    align-items: center; /* Centra los elementos */
   }
+  .banner {
+    width: 100%; /* Ocupar todo el ancho */
+    text-align: center;
+  }
+  .products {
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Ajusta el tamaño de las tarjetas */
+  }
+  /*-------------Pie de Pagina----------------------------------------------------*/
   .pieDePagina {
     flex-direction: column; /* Apila verticalmente las secciones */
     align-items: center;
@@ -492,7 +508,7 @@
 .main-container .products {
   flex: 3;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300xpx, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
 }
 .main-container .product {

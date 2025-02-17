@@ -1,112 +1,121 @@
 @media (max-width: 480px) {
-    .contenedorInformacion{
-        background-color: #949494;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
+  /*------------------------------------------Inicio Media footer--------------------------------------------*/
+  .contenedorInformacion {
+    background-color: #949494;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .contenedorAyuda {
+    background-color: #949494;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .contenedorRedesSociales {
+    width: 400px;
+    background-color: #949494;
+    text-align: center; // Centra el texto y la imagen
+
+    p {
+      font-size: 18px; // Ajusta el tamaño del texto si es necesario
+      margin-bottom: 10px; // Espacio entre el texto y el enlace
     }
 
-    .contenedorAyuda{
-        background-color: #949494;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
+    a {
+      background-color: #949494;
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      padding-left: 15px;
+
+      img {
+        width: 100px; // Ajusta el tamaño de la imagen
+        height: auto;
+        margin-top: 5px;
+      }
     }
+  }
+  /*------------------------------------------Fin Media footer-------------------------------------------------*/
 
-    .contenedorRedesSociales {
-        width: 400px;
-        background-color: #949494;
-        text-align: center; // Centra el texto y la imagen
-    
-        p {
-            font-size: 18px; // Ajusta el tamaño del texto si es necesario
-            margin-bottom: 10px; // Espacio entre el texto y el enlace
-        }
-    
-        a {
-            background-color: #949494;
-            width: 300px;
-            display: flex;
-            flex-direction: column;
-            text-decoration: none;
-            padding-left: 15px;
-    
-            img {
-                width: 100px; // Ajusta el tamaño de la imagen
-                height: auto;
-                margin-top: 5px;
-            }
-        }
-    }
+  /*------------------------------------------Inicio Media Producto--------------------------------------------*/
 
-    .contenedorProducto {
-        padding: 10px;
-        margin: 5% auto;
-      }
-    
-      .contenedorProducto .contenedorImagenesProducto {
-        flex-direction: column;
-        align-items: center;
-        gap: 5px;
-      }
-    
-      .contenedorProducto .contenedorImagenesProducto img {
-        width: 100%; /* Imágenes más pequeñas */
-      }
-    
-      .contenedorProducto .contenedorImagenPrincipal img {
-        width: 100%; /* Imagen principal más pequeña */
-      }
-    
-      .contenedorProducto .contenedorDetalle {
-        width: 100%;
-      }
-    
-      .contenedorProducto .contenedorTalle {
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-    
-      .contenedorProducto .contenedorCantidad {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-      }
-    
-      .contenedorProducto .contenedorCantidad button {
-        font-size: 10px; /* Botones más pequeños */
-        padding: 4px 7px;
-      }
-    
-      .contenedorProducto .contenedorMetodosPagos {
-        text-align: center;
-      }
-    
-      .contenedorProducto .contenedorPromociones {
-        justify-content: center;
-      }
-    
-      .contenedorProducto .contenedorPromociones img {
-        width: 40px; /* Logos de pago más pequeños */
-      }
-    
-      .contenedorProducto #agregarCarrito {
-        padding: 8px 16px;
-        font-size: 10px;
-      }
+  .contenedorProducto {
+    padding: 10px;
+    margin: 5% auto;
+  }
 
-      table {
-        font-size: 12px; /* Texto más pequeño en pantallas muy pequeñas */
-      }
-    
-      td img {
-        width: 30px; /* Imágenes más pequeñas */
-      }
-    
-      .contenedorTextoCarrito {
-        font-size: 1rem; /* Texto más pequeño en pantallas muy pequeñas */
-        padding: 10px; /* Espaciado interno reducido */
-      }
+  .contenedorProducto .contenedorImagenesProducto {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .contenedorProducto .contenedorImagenesProducto img {
+    width: 100%; /* Imágenes más pequeñas */
+  }
+
+  .contenedorProducto .contenedorImagenPrincipal img {
+    width: 100%; /* Imagen principal más pequeña */
+  }
+
+  .contenedorProducto .contenedorDetalle {
+    width: 100%;
+  }
+
+  .contenedorProducto .contenedorTalle {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contenedorProducto .contenedorCantidad {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .contenedorProducto .contenedorCantidad button {
+    font-size: 10px; /* Botones más pequeños */
+    padding: 4px 7px;
+  }
+
+  .contenedorProducto .contenedorMetodosPagos {
+    text-align: center;
+  }
+
+  .contenedorProducto .contenedorPromociones {
+    justify-content: center;
+  }
+
+  .contenedorProducto .contenedorPromociones img {
+    width: 40px; /* Logos de pago más pequeños */
+  }
+
+  .contenedorProducto #agregarCarrito {
+    padding: 8px 16px;
+    font-size: 10px;
+  }
+
+  /*------------------------------------------Fin Media Producto----------------------------------------------*/
+
+  /*------------------------------------------Inicio Media Carrito--------------------------------------------*/
+
+  table {
+    font-size: 12px; /* Texto más pequeño en pantallas muy pequeñas */
+  }
+
+  td img {
+    width: 30px; /* Imágenes más pequeñas */
+  }
+
+  .contenedorTextoCarrito {
+    font-size: 1rem; /* Texto más pequeño en pantallas muy pequeñas */
+    padding: 10px; /* Espaciado interno reducido */
+  }
+  /*------------------------------------------Fin Media Carrito-----------------------------------------------*/
 }
