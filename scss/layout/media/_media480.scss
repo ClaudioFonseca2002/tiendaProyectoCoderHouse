@@ -5,7 +5,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 1px;
+    b{
+      font-size: 10px;
+    }
+    
+    a{
+      font-size: 10px;
+    }
   }
 
   .contenedorAyuda {
@@ -14,6 +21,13 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
+    b{
+      font-size: 10px;
+    }
+    
+    a{
+      font-size: 10px;
+    }
   }
 
   .contenedorRedesSociales {
@@ -21,11 +35,12 @@
     background-color: #949494;
     text-align: center; // Centra el texto y la imagen
 
-    p {
-      font-size: 18px; // Ajusta el tamaño del texto si es necesario
-      margin-bottom: 10px; // Espacio entre el texto y el enlace
-    }
 
+
+    b{
+      font-size: 10px;
+    }
+    
     a {
       background-color: #949494;
       width: 300px;
@@ -33,6 +48,7 @@
       flex-direction: column;
       text-decoration: none;
       padding-left: 15px;
+      font-size: 10px;
 
       img {
         width: 100px; // Ajusta el tamaño de la imagen

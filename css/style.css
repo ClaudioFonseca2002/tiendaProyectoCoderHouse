@@ -74,7 +74,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 1px;
+  }
+  .contenedorInformacion b {
+    font-size: 10px;
+  }
+  .contenedorInformacion a {
+    font-size: 10px;
   }
   .contenedorAyuda {
     background-color: #949494;
@@ -83,14 +89,19 @@
     justify-content: center;
     gap: 10px;
   }
+  .contenedorAyuda b {
+    font-size: 10px;
+  }
+  .contenedorAyuda a {
+    font-size: 10px;
+  }
   .contenedorRedesSociales {
     width: 400px;
     background-color: #949494;
     text-align: center;
   }
-  .contenedorRedesSociales p {
-    font-size: 18px;
-    margin-bottom: 10px;
+  .contenedorRedesSociales b {
+    font-size: 10px;
   }
   .contenedorRedesSociales a {
     background-color: #949494;
@@ -99,6 +110,7 @@
     flex-direction: column;
     text-decoration: none;
     padding-left: 15px;
+    font-size: 10px;
   }
   .contenedorRedesSociales a img {
     width: 100px;
