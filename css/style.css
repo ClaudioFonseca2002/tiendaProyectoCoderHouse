@@ -340,9 +340,12 @@
   .mainRegistro {
     display: flex;
     justify-content: center;
+    background-color: rgb(255, 255, 255);
   }
   .mainRegistro .contenedorFormulario {
     width: 90%;
+    margin-top: 75px;
+    margin-bottom: 75px;
   }
   .mainRegistro .contenedorFormulario .contenedorBotonesRegistro {
     width: 70%;
